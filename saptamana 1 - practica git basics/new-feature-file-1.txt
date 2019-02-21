@@ -1,0 +1,1 @@
+Git is a revision revision system running on most platforms, including Linux, POSIX, Windows and OS X. Like Mercurial , Git is a distributed system and does not maintain a common database. It is used in large development teams where team members are somewhat independent and are spread over a large geographical area.
