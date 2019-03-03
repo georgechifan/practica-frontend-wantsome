@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Travel reservation form</h1> 
+        <h3>* denotes mandatory</h3>
+  <form>
+        <label for="full name">full nume *</label> <br>
+        <input type="text" onfocus="this.value=''" value="FirstName LastName" required><br>
+    
+        <label for="Email address">Email address * </label><br>
+        <input type="text" onfocus="this.value=''" value="EMAIL ADDRESS" required><br>
+
+        <label for="select tour package">Select Tour Package *</label><br>
+    <select required> 
+<option value=""></option>       
+<option value="Goal">Goal</option>
+<option value="Silver">Silver</option>
+    </select><br>
+
+    <label for="date">Arrival date *</label><br>
+    <input type="date" name="Arrival date"required><br>
+
+    <label for="Number of persons">Number of persons *</label><br>
+    <input type="text" onfocus="this.value=''" value="UNKNOWN TYPE" required><br>
+
+    <label for="available">What would you want to avail? *</label><br>
+    <input type="checkbox" name="type1" value="boarding"> Boarding<br>
+    <input type="checkbox" name="Type2" value="fooding"> Fooding<br>
+    <input type="checkbox" name="type3 " value="sight seeing" checked required> sight seeing<br>
+  
+    <label for="discount">Discount Coupon Code</label> <br>
+        <input type="text" onfocus="this.value=''" value="UNKNOWN_TYPE"><br>
+
+        <label for="agree">Terms and coditions *</label><br>
+    <input type="radio" name="term" value="agree">I agree
+    <input type="radio" name="term" value="disagree" required>I disagree<br>
+
+    <input type="submit" value="Complete reservation">
+</form>
+    </body>
+</html>
