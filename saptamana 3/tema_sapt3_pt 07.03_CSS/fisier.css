@@ -1,0 +1,19 @@
+.p {
+    border:1px solid black;
+    color: green;
+    font-style:green;
+    }
+    
+    #q {
+        border:1px solid black;
+        color: #c55;
+    }
+    
+    #hr {
+    color:blue;
+    }
+
+#img{
+    font-size: 15%;
+    color: blueviolet;
+}
