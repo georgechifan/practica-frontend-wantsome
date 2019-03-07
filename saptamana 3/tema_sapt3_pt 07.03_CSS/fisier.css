@@ -17,3 +17,14 @@
     font-size: 15%;
     color: blueviolet;
 }
+
+div > p {
+    background-color: yellow;}
+
+
+    h2 + p {color: blue}
+
+
+
+
+

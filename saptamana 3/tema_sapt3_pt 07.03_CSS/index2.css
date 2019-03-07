@@ -1,0 +1,55 @@
+li:nth-child(2n)
+    {
+       color: green
+    }
+
+/*:root { background: yellow }
+
+input:checked { outline: 3px solid blue }*/
+
+
+
+
+li:first-child
+    {
+        border-top: solid 1px;
+        border-top-color: green;
+    }
+  
+   li:last-child { border-bottom: dotted 5px;
+border-bottom-color: blue ;  
+}
+ 
+li:nth-child(3)
+    {
+       color: red
+    }
+
+    li:nth-child(5)
+    {
+       color: red
+    }
+
+    a:hover(5) { color: red }
+
+
+    li:nth-child(2)
+    {
+       list-style-type: none;
+    }
+
+    li:nth-child(5)
+    {
+       list-style-type: none;
+    }
+    
+    input[type=email]{
+        color: pink;
+        background: yellow;}
+
+        .SEND:hover{
+            text-align: red;
+            color: black;
+            padding: 8px;
+        }
+
