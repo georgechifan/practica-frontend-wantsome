@@ -1,0 +1,72 @@
+h1{
+    color: blue;
+    font-size: 300%;
+}
+
+        .div{
+            background-color: yellow;
+            font-family: 'Indie Flower', cursive;
+            font-size: 20px;
+            border-color: blue;
+
+        }
+
+    body{
+        background-color: aqua;
+    }
+
+    .tara{
+        font-style: italic oblique;
+    }
+
+    p{
+        border-color: red;
+        text: italic;
+    }
+
+    button{
+        background-color: fuchsia
+    }
+
+    button:hover {background: gold;
+        color: red }
+
+        /*input:hover{
+            border-style: double;
+            width: 30px;
+        }*/
+
+        .lable{  /*aliniere pagina la dreapta*/
+text-align: right;
+border-style: solid;
+color: red;
+        }
+
+        .allign{  
+            text-align: right;
+            border-style: solid;
+            color: red;
+                    }
+
+        .varsta{
+            background-color: grey;
+            font-family: 'Indie Flower', cursive;
+            font-family: 'Permanent Marker', cursive;
+            font-size: 50px;
+            border-color:red;
+            border-style: double;
+            width: 100px;
+        }
+
+        .mesaj{
+              
+            border: 6px black dotted;
+            background-color: skyblue;
+            padding: 10px;
+            font-size:15px;
+            font-style: oblique;
+        }
+
+        .submit{
+                color: red;
+        }

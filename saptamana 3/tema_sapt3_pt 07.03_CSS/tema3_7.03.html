@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link href="tema3_7.03.css" rel="stylesheet" type="text/css">
+            <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Permanent+Marker" rel="stylesheet">
+        </head>
+    <body>
+        <h1>HOMEWORK</h1> 
+        <h3>HTML Elements and Attributes - Exercitii</h3>
+<form id class="lable">
+    <div>   <!--campurile obligatorii - background galben-->
+    <label for="name">nume</label> 
+    <input class="div" type="text" name="name" required>*<br> </div>
+
+    <div>
+    <label for="prenume">prenume</label>
+    <input class="div" type="text" name="prenume" required>*<br></div>
+    
+    <div>
+    <label for="sex">sex</label><br>
+    <input type="radio" name="gen" value="masculin">masculin<br>
+    <input class="div" type="radio" name="gen" value="feminin">feminin<br></div>
+    <div>
+    <label for="varsta">varsta</lable >
+    <input class="varsta" type="number" name="varsta" min="18" max="85"value="18">
+    <p><strong>Note:</strong> Varsta trebuie sa fie cuprinsa intre 18 si 85 de ani</p><br></div>
+    
+    <label for="Tara">Tara</label>
+    <select>
+<option value="Romania">Romania</option>
+<option value="Afghanistan">Afghanistan</option>
+<option value="Albania">Albania</option>
+<option value="Algeria">Algeria</option>
+<div>
+        </select> <br>
+        
+    <label for="Oras">Oras</label>
+    <input type="text" onfocus="this.value=''" value="Insert your town"><br>
+    
+    <label for="Adresa">Adresa</label>
+    <input type="Adresa" name="Adresa" ><br>
+
+    <lable for="cod postal">Cod postal</lable>
+    <input id="zip" name="zip" type="number" value="100000"><br>
+
+    <lable for="E-mail">E-mail</lable>
+    <input class="div" type="E-mail" name="E-mail" required>*<br>
+
+    <div>
+    <label for="Mesaj">Mesaj</lable> <br>
+    <form action="/action_page.php">
+    <textarea class="mesaj" rows="3" cols="30"></textarea><br><br>
+    </div>
+    
+    <lable for="Atasare CV">Atasare CV</lable>
+    <input type="file" name="pic" accept="image">
+    
+    <button type="reset" value="Reset">Reset</button>
+    <input type="submit" value="send">
+ 
+</form>        
+    </body>
+</html>
