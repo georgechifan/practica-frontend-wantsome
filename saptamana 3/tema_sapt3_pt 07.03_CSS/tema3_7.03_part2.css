@@ -1,0 +1,113 @@
+h1{
+    color: #0000ff;
+    font-size: 300%;
+    list-style-position: inside;
+}
+
+        .div{
+            border-style: solid;
+            align-content: center;
+            background-color:skyblue; /*culorile sunt mai stridente sa fie efectele mai vizibile*/
+            opacity: 0.7;
+            text:bold;
+            font-family: 'Indie Flower', cursive;
+            font-size: 20px;
+            border-color: red;
+
+        }
+
+    body{
+        background: #00ff00 url('paris1.JPG') fixed center;
+        
+    }
+
+    .li1{
+        color: blue;
+        font-style: italic;
+        border-bottom: 10px;
+        list-style-type: decimal;
+        style:width 500px ;
+        margin:center;
+        text-align: center;
+        
+    }
+
+    .li2{
+        color: red;
+        font-style: oblique;
+        text-align: left;
+        list-style-type: georgian;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .u{
+        text-align: right;
+        font-family: 'Indie Flower', cursive;
+        font-family: 'Permanent Marker', cursive;
+        font-family: 'Boogaloo', cursive;
+    }
+
+    p{
+        border-color: red;
+        text: italic;
+    }
+
+    .lable{
+        font-display: red;
+    }
+
+    .mesaj{
+        ;
+        text-align: center; 
+        text: bold;
+    }
+  /*  button{
+        background-color: fuchsia
+    }
+
+    button:hover {background: gold;
+        color: red }
+
+        /*input:hover{
+            border-style: double;
+            width: 30px;
+        }*/
+
+        .lable{  /*aliniere pagina la dreapta*/
+text-align: right;
+border-style: solid;
+color: red;
+        }
+
+       /* .allign{  
+            text-align: right;
+            border-style: solid;
+            color: red;
+                    }
+
+        .varsta{
+            background-color: grey;
+            font-family: 'Indie Flower', cursive;
+            font-family: 'Permanent Marker', cursive;
+            font-size: 50px;
+            border-color:red;
+            border-style: double;
+            width: 100px;
+        }     
+
+        .mesaj{
+              
+            border: 6px black dotted;
+            background-color: skyblue;
+            padding: 10px;
+            font-size:15px;
+            font-style: oblique;
+        }
+
+        .submit{
+                color: red;
+        }    */
+
+        .checkbox{
+            color: blue;
+        }
