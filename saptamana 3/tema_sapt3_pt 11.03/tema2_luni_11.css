@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.element-content{
+height: 200px;
+background-color: blue;
+border: 2px solid yellow;
+}
+
+.container{
+    height: 340px;
+    width: 247px;
+    background-color: red;
+    float: left;
+    border: 2px solid yellow;
+}
+
+.section1{
+    height:50%;
+    width: 100%;
+    float: inline-start;
+    background-color: yellow;
+    border: 2px solid yellow;
+}
+
+.section2{
+    height: 100px;
+    background-color: green;
+    width: 150%;
+    float: inline-start;
+    border: 2px solid yellow;
+}
+
+.section3{
+    height: 200px;
+    background-color: lightseagreen;
+    width: 81%;
+    float: right;
+    border: 2px solid yellow;
+    
+}
+
+.footer{
+    height: 600px;
+    clear: both;
+    background-color: brown;
+    border: 2px solid yellow;
+}
