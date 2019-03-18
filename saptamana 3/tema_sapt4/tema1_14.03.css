@@ -1,0 +1,57 @@
+.body{
+    background-color:#00BFFF;
+ 
+}
+
+
+.main{
+    background-color:rgba(39,139,34,0.3);
+    display:flex; 
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.header{
+    height: 70px;
+    text-align: center;
+    background: rgb(34 139 34);
+    color: white;
+    font-size: 30px;
+    top: 0;
+}
+
+.footer{
+   height: 70px;
+   text-align: center;
+   width: 100%;
+   background:rgb(34 139 34);
+   color: white;
+   font-size: 30px;
+   position: fixed;
+   bottom: 0;
+
+}
+
+.bloc1{
+    width: 250px;
+    height: 250px;
+    background-image: url(facebook.jpg);
+    
+    
+} 
+
+.bloc2{
+    width: 250px;
+    height: 250px;
+    background-image: url(instagram.jpg);
+   
+}
+
+.bloc3{
+    width: 150px;
+    height: 250px;
+    background-image: url(twitter.jpg);
+    object-fit: cover;
+
+}

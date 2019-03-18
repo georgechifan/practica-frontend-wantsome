@@ -1,0 +1,47 @@
+.grid-container{
+    background: linear-gradient(to right, #373B44, #4286f4);
+    display: grid;
+    grid-gap: 10px;
+    width: 500px;
+    height: 500px;
+    grid-gap: 10px 10px;
+}
+
+.fel1{
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2; 
+    background-image:url(1.jpg);
+    margin: 10px 10px 10px 10px;
+    
+}
+
+.fel2{
+    display: grid;
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
+    background-image:url(2.jpg);
+    margin: 10px 10px 10px 10px;
+    
+}
+
+.fel3{
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+    background-image:url(3.jpg);
+    margin: 10px 10px 10px 10px;
+}
+  
+.fel4{
+    display: grid;
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    background-image: url(4.jpg);
+    margin: 10px 10px 10px 10px;
+
+}
+
+@media only screen and (max-width: 768px){
+    main {flex-direction:column;}  
+  }
