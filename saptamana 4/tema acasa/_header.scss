@@ -3,6 +3,7 @@
     padding: 15px;
     width: 100%;
     height: 200px;
+    
 }
 
 .welcome{
@@ -12,11 +13,20 @@
 }
 .box {
     display: flex;
+    color: white;
+    padding: 5px 20px;
+    font-family: "roboto", sans-serif;
+    font-size: 15px;
 }
 
 .push {
     margin-left: auto;
+    color: white;
+    text-decoration: none;
+    
 }
 
-
+.a{
+    color: white;
+}
 
