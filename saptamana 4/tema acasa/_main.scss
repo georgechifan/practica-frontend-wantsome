@@ -1,0 +1,46 @@
+.main{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 50px;
+
+}
+
+
+.paragraf1{
+    width: 200px;
+    height: 200px;
+    border-right:2px solid dodgerblue;
+    text-align: left;
+    color: dodgerblue;
+    background-color: white;
+    padding: 25px; 
+}
+
+.paragraf2{
+    width: 200px;
+    height: 200px;
+    border-right:2px solid dodgerblue;
+    text-align: left;
+    color: dodgerblue;
+    background-color: white;
+    padding: 25px;
+}
+
+.paragraf3{
+    width: 200px;
+    height: 200px;
+    text-align: left;
+    color: dodgerblue;
+    background-color: white;
+    padding: 25px;
+}
+
+.button{
+    background-color: dodgerblue;
+    color:white;
+    position: relative;
+    bottom: 0px;
+}
