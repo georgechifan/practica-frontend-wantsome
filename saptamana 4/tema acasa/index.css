@@ -56,7 +56,7 @@
   text-align: left;
   color: dodgerblue;
   background-color: white;
-  padding: 25px;
+  padding: 1px 25px;
 }
 
 .paragraf2 {
@@ -66,7 +66,7 @@
   text-align: left;
   color: dodgerblue;
   background-color: white;
-  padding: 25px;
+  padding: 1px 25px;
 }
 
 .paragraf3 {
@@ -75,7 +75,17 @@
   text-align: left;
   color: dodgerblue;
   background-color: white;
-  padding: 25px;
+  padding: 1px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .button {
@@ -84,6 +94,19 @@
   position: relative;
   bottom: 0px;
   border: 1px blue;
+}
+
+.par {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 h1 {
@@ -102,6 +125,7 @@ h2 {
 
 .ipsum {
   background-color: dodgerblue;
+  padding: 70px;
 }
 
 .box {

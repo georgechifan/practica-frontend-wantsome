@@ -16,7 +16,7 @@
     text-align: left;
     color: dodgerblue;
     background-color: white;
-    padding: 25px; 
+    padding: 1px 25px; 
 }
 
 .paragraf2{
@@ -26,7 +26,7 @@
     text-align: left;
     color: dodgerblue;
     background-color: white;
-    padding: 25px;
+    padding: 1px 25px; 
 }
 
 .paragraf3{
@@ -35,7 +35,10 @@
     text-align: left;
     color: dodgerblue;
     background-color: white;
-    padding: 25px;
+    padding: 1px 25px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 } 
 
 .button{
@@ -44,4 +47,10 @@
     position: relative;
     bottom: 0px;
     border: 1px blue;
+}
+
+.par{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
