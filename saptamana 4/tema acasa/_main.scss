@@ -17,6 +17,9 @@
     color: dodgerblue;
     background-color: white;
     padding: 1px 25px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .paragraf2{
@@ -27,6 +30,9 @@
     color: dodgerblue;
     background-color: white;
     padding: 1px 25px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .paragraf3{
@@ -47,10 +53,4 @@
     position: relative;
     bottom: 0px;
     border: 1px blue;
-}
-
-.par{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
