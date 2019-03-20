@@ -17,7 +17,6 @@
   display: flex;
   color: white;
   padding: 5px 20px;
-  font-family: "roboto", sans-serif;
   font-size: 15px;
 }
 
@@ -29,10 +28,8 @@
 
 .a {
   color: white;
-}
-
-.theory {
-  background-color: red;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
 
 .main {
@@ -167,6 +164,7 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 15px;
   color: grey;
 }
 
@@ -178,10 +176,27 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 10px;
-  max-width: 350px;
+  max-width: 400px;
+}
+
+.ppp {
+  color: grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: center;
+  padding: 1% 15%;
+}
+
+.i {
+  margin-left: auto;
+}
+
+#hr {
+  width: 70%;
 }
 /*# sourceMappingURL=index.css.map */

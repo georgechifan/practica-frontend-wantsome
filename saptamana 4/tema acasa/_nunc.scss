@@ -12,15 +12,15 @@
 .img{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    color: grey;
-    
-}
+    justify-content: center;
+    margin: 15px;
+    color: grey; 
+}  
 
 .img11{
-    display: flex;
+    display: flex; 
     flex-direction: column;
     justify-content: center;
-    padding: 10px;
-    max-width: 480px; 
+    padding: 10px; 
+    max-width: 400px;
 } 
