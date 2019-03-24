@@ -1,0 +1,112 @@
+//Ex1
+//Scrieti o functie multiplyByTen care atunci cand o apelam cu console.log(multiplyByTen(6)) sa avem 60 rezultat.
+function multiplyByTen(number){
+  var result=number*10;
+  return result;
+}
+console.log(multiplyByTen(6));
+
+
+
+//Ex2
+//Scrieti o functie myNameIs care sa ia un singur parametru si cand o apelam cu numele nostru sa returneze "Numele meu este ___"
+function myName (a){
+  var result="numele meu este "+ a;
+  return result;
+  }
+console.log(myName("george"));
+
+
+
+//Ex3 
+//Scrieti o functie care sa transforme un numar in string.
+
+function transform(a){
+  var result=a;
+  var noua=result.toString();
+  return result;
+}
+console.log(transform(3));
+
+//Ex4 
+//Scrieti o functie care sa returneze patratul numarului pe care-l dam ca si argument.
+function patrat(a){
+  var result=a*a;
+  return result;
+}
+console.log(patrat(5));
+
+
+//Ex4 
+//Scrieti o functie care sa returneze patratul numarului pe care-l dam ca si argument.
+
+function myFunction5(patrat){
+  var result=patrat*patrat;
+  return result;
+}
+console.log(myFunction5(5));
+
+
+//Ex5
+//Scrieti o functie numita aflaViitorul care sa aiba 4 parametrii -  numele jobului, compania, in cati ani, si cati bani - ar trebui sa returnam "Eu voi fi job in x ani la compania y si voi face z bani pe ora"
+//Chemati/invocati/apelati acea functie de 3 ori cu diferite argumente.
+
+function aflaViitorul(job,companie,ani,bani){
+var result="eu voi fi "+job+" in "+ani+" ani "+"la compania "+companie+" si voi face "+bani+" EUR pe ora";
+return result;
+  var job=job;
+  var companie=companie;
+  var ani=ani;
+  var bani=bani;
+}
+console.log(aflaViitorul("frontender","Oracle","1", "200"));
+console.log(aflaViitorul("programator","Amazon","2","300"));
+
+
+
+var myString="we Want Java Script";
+console.log(myString.length);
+
+
+
+
+var aboutUs='weWant \"Java\" Script';
+console.log(aboutUs);
+
+
+//5. Scrieti o functie care face prima litera a unui string sa fie de tip capital ( litera mare ):
+var string="js string exercises"
+var result=string.charAt(0).toUpperCase() + string.slice(1);
+console.log(result);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Ex1 : La ce index intalnim cuvantul 'trece', dar cuvantul 'javascript'? Scrieti si metodele folosite.
+var str = "Daca te simti bine, nu te ingrijora, trece!";
+//Raspuns: 37 , -1
+
+// Ex2.0: Returnati stringul Kiwi folosind metoda slice() cu indexi pozitivi si apoi negativi.
+// Ex 2.1: Returnati toate fructele incepand de la 'Lemon'.
+var fruits = "Apple, Lemon, Plum, Kiwi";
+var result = fruits.slice(20, 24);
+console.log(result)
+
+  
+
+
+
