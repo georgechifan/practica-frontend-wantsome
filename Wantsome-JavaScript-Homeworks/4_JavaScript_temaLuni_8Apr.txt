@@ -1,0 +1,202 @@
+//Ex1
+//Scrieti o functie care sa protejeze emailul unui user
+// de ex: myFunction("ovidiu.grigoras@test.com") sa printeze "ovidiu...@test.com" sau "ovid...@test.com"
+// function protectEmailUser(email){
+//   var text = "ovidiu.grigoras@test.com";
+//   var result = text.split("@");   
+//   var result2=result[0];
+//   var result4=text.split(".");
+//   var result3=result4[0] + "....." +"@"+ result[1];
+//   console.log(result3);
+// }
+// protectEmailUser();
+
+
+//Ex2
+//Scrieti o functie care sa faca uppercase la fiecare litera de la fiecare inceput de string
+// de ex: myFunction("i am superman") sa printeze "I Am Superman"
+// function upperCase(text){
+//   var array = text.split(" ");
+//   var newarray = [];
+//   for(var i = 0; i < array.length; i++){
+//       newarray.push(array[i].charAt(0).toUpperCase()+array[i].slice(1));
+//   }
+//   return newarray.join(" ");
+// }
+// console.log(upperCase("i am superman"));
+
+
+//Ex3
+// Scrieti o functie care sa schimbe literele unui string daca sunt uppercase cu lowercase si invers
+// ex: myFunction("xxXyYzZZ") sa printeze "XXxYyZzz"
+//nu afiseaza!
+// function stringFunction(str){
+//   var newString=[];
+//   for(i=0;i<str.length;i++){
+//     if(str[i].charCodeAt[i]>91){
+//       newString+=str[i].toUpperCase();
+//     }
+//     else { 
+//       newString+=str[i].toLowerCase();
+//     }
+//     return newString;
+//   }
+// }
+// console.log(stringFunction("XXYYss"));
+
+
+
+//Ex4
+// Scrieti o functie care sa concateneze un string de cate ori ii zicem
+// de ex: myFunction("Wantsome", 2) sa printeze "WantsomeWantsome"
+
+// function concatStringNTimes(str, n){
+//   var result = [];
+//   result.length=n+1;
+//   return result.join(str);
+  
+// }
+// console.log(concatStringNTimes("Wantsome", 6))
+
+
+//Ex5
+// A palindrome is a word or a phrase that is the same whether you read it backward or forwards, for example, the word 'level'.
+// Scrieti o functie care verifica daca un string este palindrom; Implementati mai multe variante
+
+// "cojoc".split("").reverse().join("");
+// ==="cojoc";
+
+//varianta 1___________________
+
+// function palindrome(str){
+//   var regexr=/[\W_]/g;
+//   var result=str.toLowerCase().replace(regexr,"");
+//   var result2=result.split("").reverse().join("");
+//   return result2===result;
+// }
+// console.log(palindrome("cojoc"));
+
+//varianta 2______________________//greu de inteles...
+// function palindrome(str){
+//   var regexr=/[^A-Za-z0-9]/g;
+//   str=str.toLowerCase().replace(regexr,"");
+//   var result=str.length;
+//     for(var i=0;i<result/2;i++){
+//       if(str[i]!==str[result-1-i]){
+//         return false;
+//       }
+//     }
+//   return true;
+// }
+// console.log(palindrome("cojoc"));
+
+//Ex6
+// Implementati o functie care accepta ca argument un array compus din mai multe array-uri de valori numerice si returneaza un array care contine ca si elemente cele mai mari numere din fiecare array
+
+// function biggerElemArray(array){
+//   var result=[0,0];
+//       for(var i=0;i<array.length;i++){
+//         for(var y=0;y<array[i].length;y++){
+//           if(array[i][y]>result[i]){
+//             result[i]=array[i][y];
+//           }
+//         }
+//       }
+//   return result;
+// }
+// console.log(biggerElemArray([[1,2,3], [4,5,6]]));
+
+
+//Ex7
+// Implementati o functie care face reverse la un string
+
+// function reverse(string) {
+//     return string.split("").reverse().join("");
+// }
+// console.log(reverse("GeorgE"));
+
+//Ex8 
+// Implementati o functie care calculeaza factorialul unui numar
+
+// function factorialNumber(nr){
+//   if(nr===0){
+//     return 1;
+//   } else {
+//     return nr*factorialNumber(nr-1);
+//   }
+// }
+// console.log(factorialNumber(5));
+
+
+
+
+//Ex9
+// Implementati o functie care accepta ca argumente doua string-uri si verifica daca primul se termina cu cel din urma
+// function verificareTerminatieString(text1,text2) {
+//   var i = text2.length;
+//   var j = text1.substring(text1.length - i);
+//   return j == text2;
+// }
+// console.log(verificareTerminatieString("marar","rar"));
+
+
+//Ex10
+// Implementati o functie care accepta doua argumente: un array si o functie de adevar. Functia returneaza primul element din array care trece testul specificat
+
+//I tried but doesn't work
+// function displayFirstElemTrue(array1){
+// }
+// var array1;
+// var found = array1.find(function(element) {
+//   return element > 10;
+// });
+// console.log(displayFirstElemTrue[1,2,3,14,15]);
+
+//trebuie sa afiseze primul element care este mai mare decat 10, adica 14
+
+
+
+//Ex11
+// Implementati o functie care accepta ca argumente doua string-uri si verifica daca primul string contine toate literele celui de-al doilea string
+//I tried but doesn't work
+// function checkAvailability(arr, val) {
+//   return arr.some(function(arrVal) {
+//     return val === arrVal;
+//   });
+// }
+// console.log(checkAvailability("appless","appl"));
+
+
+
+// Ex 12
+// Implementati o functie care accepta ca argumente doi parametri: un array si o valoare. Functia afiseaza fiecare element al array-ului pana cand intalneste elementul cu valoarea specificata
+
+//doesn't work
+// var displayEveryNumTrue = [];
+// numberArray.forEach.number{
+//     if (number%2 === 1){
+//         evenNumbers1.push(number)
+//     }
+// })
+// console.log(evenNumbers1[1,2,3,4]);
+
+
+
+
+// Ex 13
+// Scrieti o functie care elimina toate valorile false dintr-un array: false, null, 0, "", undefined, NaN
+
+// function deleteFalseValue(array) {
+//  return array.filter(item => item); //din ce am inteles: imi filtreaza ceea ce pun in array si => returneaza din noul array cu elementele noi.
+// }
+// console.log(deleteFalseValue(["George","2",false,NaN], "0" ," "));
+
+
+// Ex 14
+// Scrieti o functie care repeta un string de n ori specificate
+
+// function repeteStringNTimes(string,times){
+//   if(times>0)
+//     return string.repeat(times);
+// }
+// console.log(repeteStringNTimes("George ",3));
