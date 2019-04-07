@@ -140,32 +140,32 @@
 
 // VAR 3 
 
-function brandName(numeMarca){
-    if(numeMarca=="Tesla"){
-        return "Marca " + numeMarca + " se produce in California";
-    }
+// function brandName(numeMarca){
+//     if(numeMarca=="Tesla"){
+//         return "Marca " + numeMarca + " se produce in California";
+//     }
 
-    else if(numeMarca=="Renault"){
-        return "Marca " + numeMarca + " se produce in Franta";
-    }
+//     else if(numeMarca=="Renault"){
+//         return "Marca " + numeMarca + " se produce in Franta";
+//     }
 
-    else if(numeMarca=="Mustang"){
-        return "Marca " + numeMarca + " se produce in SUA";
-    }
-    else if(numeMarca=="Volkswagen"){
-        return "Marca " + numeMarca + " se produce in Germania";
-    }
-    else if(numeMarca=="Mazda"){
-        return "Marca " + numeMarca + " se produce in Japonia";
-    }
-    else if(numeMarca=="Dacia"){
-        return "Marca " + numeMarca + " se produce in Romania";
-    }
-    else{
-        return "Marca este necunoscuta";
-    } 
-}
-console.log(brandName("Tesla"));
+//     else if(numeMarca=="Mustang"){
+//         return "Marca " + numeMarca + " se produce in SUA";
+//     }
+//     else if(numeMarca=="Volkswagen"){
+//         return "Marca " + numeMarca + " se produce in Germania";
+//     }
+//     else if(numeMarca=="Mazda"){
+//         return "Marca " + numeMarca + " se produce in Japonia";
+//     }
+//     else if(numeMarca=="Dacia"){
+//         return "Marca " + numeMarca + " se produce in Romania";
+//     }
+//     else{
+//         return "Marca este necunoscuta";
+//     } 
+// }
+// console.log(brandName("Tesla"));
 
 //WORKS
 // 4. Scrieti o functie de tip IIFE care afiseaza in consola:
@@ -176,5 +176,5 @@ console.log(brandName("Tesla"));
 // var result=(function(){
 //     var IIFEFunc="Afisez, deci ma autoapelez";
 //     return IIFEFunc;
-// })()
+// })()---se autoapeleaza
 // console.log(result);

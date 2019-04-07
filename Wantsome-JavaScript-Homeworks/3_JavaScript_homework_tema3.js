@@ -120,30 +120,121 @@
 //calificativul B \n ...samd “). Atentie: Rezultatul calificativul trebuie sa fie obtinut prin utilizarea functiei
 //dezvoltate la tema anterioara !
 //-----------------------------------------
-var calificativPunctaj=function(nota){
+// var calificativPunctaj=function(nota){
 
-if (nota<=3){
-    return "Pentru " + nota + ", obtii calificativul E";
-} else {
-    if (nota>=4 && nota<=6){
-    return "Pentru " + nota + ", obtii calificativul D";
-} else {
-    if(nota===7 || nota===8){
-        return "Pentru " + nota + ", obtii calificativul B";
-} else {
-    if(nota===9){
-        return "Pentru " + nota + ", obtii calificativul A";
-    }
-    else {
-        return "Pentru " + nota + ", obtii calificativul A+";
-    }
+// if (nota<=3){
+//     return "Pentru " + nota + ", obtii calificativul E";
+// } else {
+//     if (nota>=4 && nota<=6){
+//     return "Pentru " + nota + ", obtii calificativul D";
+// } else {
+//     if(nota===7 || nota===8){
+//         return "Pentru " + nota + ", obtii calificativul B";
+// } else {
+//     if(nota===9){
+//         return "Pentru " + nota + ", obtii calificativul A";
+//     }
+//     else {
+//         return "Pentru " + nota + ", obtii calificativul A+";
+//     }
+// }
+// }
+// }
+// }
+// function afisareCalificativPunctaje(){      //declarare functie cu numele afisareCalificativPunctaje 
+//     for(i=1;i<=10;i++){                     //prin bucla for ii atribuim o valoare variabilei i, sa fie maxim 10 si o incrementam
+//         console.log(calificativPunctaj(i)); //afisam functia definita la exercitiul anterior luand variabila noastra i
+//     }
+// }
+// afisareCalificativPunctaje();               //apelare functie nou creata dar in care este inclusa functia veche
+
+
+
+//____________________________________________________________________________________________________________________________________
+
+// function nrDivCuTrei(){
+//     for(var i=1;i<101;i++){
+//         if(i%3==0){
+//                 console.log(i);}
+//         // } else {
+//         //     console.log("numarul " + i + " nu este divizibil cu trei")
+//         // }
+//     }
+// }
+// nrDivCuTrei();
+
+
+
+// function nrDivCuTrei(){
+//     for(var i=1;i<=50;i++){
+//         if(i%2==0){
+//             console.log("numarul " + i + " este par");}
+//         // } else {
+//         //     console.log("numarul " + i + " nu este par")
+//         // }
+//     }
+// }
+// nrDivCuTrei();
+
+// function prime(){
+//     var i=0;
+//     for(i=0;i<=50;i++){
+//         if (i % 2 == 0){
+//             break;
+//         }
+//         else if (i % 3 == 0){
+//             break;
+//         }
+//         else if (i % 4== 0){
+//             break;
+//         }
+//         else if (i % 5 == 0){
+//             break;
+//         }
+//         else if (i % 6 == 0){
+//             break;
+//         }
+//         else if (i % 7 == 0){
+//             break;
+//         }
+//         else if (i % 8 == 0){
+//             break;
+//         }
+//         else if (i % 9 == 0){
+//             break;
+//         } 
+//         else {
+//             return i;
+//         }
+//     }
+// }
+// console.log(prime(i));
+
+
+// var userDetails = { name:"Ovidiu", surname:"Grig", varsta: 18 };
+// var userInfoText = "Detaliile utilizatorului sunt: ";
+// for (var key in userDetails) {
+//  userInfoText += userDetails[key] + ",";
+// }
+// console.log(userInfoText);
+
+
+// do{
+//     text+="contorul este" + i;
+//     i++;
+// }
+// while(i<9){
+// }
+
+// console.log();
+
+var i = 5;
+while (true)
+{
+ console.log(i + " oameni mai sunt in asteptare");
+ i -= 1;
+ if (i == 5)
+ {
+ break;
+ }
 }
-}
-}
-}
-function afisareCalificativPunctaje(){      //declarare functie cu numele afisareCalificativPunctaje 
-    for(i=1;i<=10;i++){                     //prin bucla for ii atribuim o valoare variabilei i, sa fie maxim 10 si o incrementam
-        console.log(calificativPunctaj(i)); //afisam functia definita la exercitiul anterior luand variabila noastra i
-    }
-}
-afisareCalificativPunctaje();               //apelare functie nou creata dar in care este inclusa functia veche
