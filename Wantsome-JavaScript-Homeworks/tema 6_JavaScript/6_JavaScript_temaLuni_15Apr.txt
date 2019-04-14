@@ -1,0 +1,274 @@
+codewars.com
+
+1.In this kata you are required to, given a string, replace every letter with its position in the alphabet.
+
+function alphabetPosition(text) {
+  var result = "";
+  for (var i = 0; i < text.length; i++) {
+    var code = text.toUpperCase().charCodeAt(i)
+    if (code > 64 && code < 91) result += (code - 64) + " ";
+  }
+
+  return result.slice(0, result.length - 1);
+}
+console.log(alphabetPosition("The sunset sets at twelve o' clock."));
+
+
+2. You are given an array (which will have a length of at least 3, but could be very large) containing integers. The array is either entirely comprised of odd integers or entirely comprised of even integers except for a single integer N. Write a method that takes the array as an argument and returns this "outlier" N.
+
+function findOutlier(integers){
+   var evens = [];
+   var odds = [];
+   for (var i = 0; i < integers.length; i++) 
+   {
+       if ((integers[i] % 2) == 0) 
+       {
+           evens.push(integers[i]);
+       } 
+       else 
+       {
+           odds.push(integers[i]);
+       }
+   }
+   var elen = evens.length;
+   var olen = odds.length;
+
+   if (elen > olen)
+   {
+       return odds[0];
+   } 
+   else 
+   {
+       return evens[0];
+   }
+}
+console.log(findOutlier([0, 1, 2], 1));
+
+
+
+3.You are going to be given a word. Your job is to return the middle character of the word. If the word's length is odd, return the middle character. If the word's length is even, return the middle 2 characters.
+
+ function extractMiddle(str) {
+
+        var position;
+        var length;
+
+        if(str.length % 2 == 1) {
+            position = str.length / 2;
+            length = 1;
+        } else {
+            position = str.length / 2 - 1;
+            length = 2;
+        }
+
+        return str.substring(position, position + length)
+    }
+
+    console.log(extractMiddle("test"));
+
+
+4. Create a function named divisors/Divisors that takes an integer n > 1 and returns an array with all of the integer's divisors(except for 1 and the number itself), from smallest to largest. If the number is prime return the string '(integer) is prime' (null in C#) (use Either String a in Haskell and Result<Vec<u32>, String> in Rust).
+
+function findPrimeFactors (num) {
+    var primeFactors = [];
+    while (num % 2 === 0) {
+        primeFactors.push(2);
+        num = num / 2;
+    }
+    var sqrtNum = Math.sqrt(num);
+    for (var i = 3; i <= sqrtNum; i++) {
+        while (num % i === 0) {
+            primeFactors.push(i);
+            num = num / i;
+        }
+    }
+    if (num > 2) {
+        primeFactors.push(num);
+    }
+    return primeFactors;
+}
+console.log(findPrimeFactors(15));
+
+
+5. An isogram is a word that has no repeating letters, consecutive or non-consecutive. Implement a function that determines whether a string that contains only letters is an isogram. Assume the empty string is an isogram. Ignore letter case.
+
+
+function isIsogram(str) {
+var strArr = str;
+for (var i = 0; i < strArr.length; i++) {
+    for (var j = 0; j < strArr.length; j++) {
+        if(i!=j){
+          if (strArr[i] == strArr[j]) {
+              return false;
+          }
+        }
+    }
+}
+return true;
+}
+console.log(isIsogram("Dermatoglyphics"));
+
+_________________________________________________________________________________
+
+1. Scrieti o functie care face prima litera a unui string sa fie de tip capital ( litera mare ):
+ES5-------
+// function capitalizare(a){
+//   var capitalizare=a.charAt(0).toUpperCase()+a.slice(1);
+//   return capitalizare;
+// }
+// console.log(capitalizare('js string exercises'));
+
+ES6-------
+const capitalizare = (text) => {
+  return text.charAt(0).toUpperCase() + text.slice(1);
+}
+console.log(capitalizare("java"));
+__________________________________________________________________________
+
+// 2. Scrieti o functie care accepta ca argument numele 
+// marcii unei masini si returneaza un text de forma: 
+// "Marca [marca] se produce in [tara]". Trebuie sa aveti 
+// macar 6 cazuri. In cazul in care functia nu recunoaste 
+// marca, va returna "Marca este necunoscuta."
+
+
+ES5-----------
+// function brandName(numeMarca){
+//     if(numeMarca=="Tesla"){
+//         return "Marca " + numeMarca + " se produce in California";
+//     }
+
+//     else if(numeMarca=="Renault"){
+//         return "Marca " + numeMarca + " se produce in Franta";
+//     }
+
+//     else if(numeMarca=="Mustang"){
+//         return "Marca " + numeMarca + " se produce in SUA";
+//     }
+//     else if(numeMarca=="Volkswagen"){
+//         return "Marca " + numeMarca + " se produce in Germania";
+//     }
+//     else if(numeMarca=="Mazda"){
+//         return "Marca " + numeMarca + " se produce in Japonia";
+//     }
+//     else if(numeMarca=="Dacia"){
+//         return "Marca " + numeMarca + " se produce in Romania";
+//     }
+//     else{
+//         return "Marca este necunoscuta!";
+//     } 
+// }
+// console.log(brandName("Tesla"));
+
+ES6------------------
+// let brandName = (numeMarca, tara) => {
+//   if(numeMarca=="Tesla" && tara=="California") {
+//     return "Marca " + numeMarca + " se produce in " + tara;
+//   } else if (numeMarca == "Mustang" && tara=="SUA"){
+//     return "Marca " + numeMarca + " se produce in SUA";
+//   }
+// }
+// console.log(brandName("Mustang", "SUA"));
+
+sau------
+
+let brandName = (numeMarca, tara) => {
+  if(numeMarca=="Tesla" && tara=="California") {
+  } else if (numeMarca == "Mustang" && tara=="SUA"){
+  }
+return "Marca " + numeMarca + " se produce in " + tara;
+}
+
+console.log(brandName("Tesla", "California"));
+
+______________________________________________________________________________
+
+3. //1. Scrieti un for care itereaza de la 0 la 20. Pentru fiecare iteratie, verifica daca numarul curent este par sau impar si va
+//raporta acest lucru in consola. (exemplu: “2 este numar par”);
+
+ES5-------------------
+// function verificareParitate(nr){
+//         for (var i=0;i<=nr;i++){
+//             if (i%2==0){
+//                 console.log (i + " este numar par");
+//             }
+//             else{
+//                 console.log (i +  " este numar impar");
+//             }
+//         }
+//     }
+//     verificareParitate(3);
+
+
+ES6-------------------
+let verifyParity = (nr) => {
+//   for (var i=0; i<=nr; i++) {
+//     if (i%2==0) {
+//       console.log(i+ " este numar par");
+//     } else {
+//       console.log(i + " este numar impar");
+//     }
+//   }
+// }
+// verifyParity(4);
+
+________________________________________________________________________________
+
+4. // A palindrome is a word or a phrase that is the same whether you read it backward or forwards, for example, the word 'level'.
+// Scrieti o functie care verifica daca un string este palindrom; Implementati mai multe variante
+
+ES5---------------- 
+// function palindrome(str){
+//   var regexr=/[^A-Za-z0-9]/g;
+//   str=str.toLowerCase().replace(regexr,"");
+//   var result=str.length;
+//     for(var i=0;i<result/2;i++){
+//       if(str[i]!==str[result-1-i]){
+//         return false;
+//       }
+//     }
+//   return true;
+// }
+// console.log(palindrome("cojoc"));
+
+ES6-----------------
+
+let palindrom = (array) => {
+//   let isPalindrom = true;
+//   for (var i=0; i<=array.length/2; i++) {
+//     if (array[i] !== array[array.length-i-1]) {
+//       isPalindrom = false;
+//       break;
+//     }
+//   }
+//   return isPalindrom;
+// }
+// console.log(palindrom("cojoc"));
+
+5. //Scrieti o functie care sa scoata literele/cifrele duplicate dintr-un string/numbar
+//removeDuplicates('aabcdeef') - 'abcdef'
+//removeDuplicates(122334) - 1234
+
+ES5-------------------
+// function removeDuplicates(str){
+//   var dublura="";
+//   for (var i=0;i<str.length;i++){
+//     if(dublura.indexOf(str.charAt(i))==-1){
+//        dublura+=str[i];
+//       }
+//   }
+// return dublura;
+// }
+// console.log(removeDuplicates("1223334"));
+
+ES6------------------
+let removeDuplicates = (str) =>{
+  let double = "";
+  for (var i=0; i<str.length; i++) {
+    if (double.indexOf(str.charAt(i))==-1){
+      double+=str[i];
+    }
+  }
+  return double;
+}
+console.log(removeDuplicates("12333145666"));
