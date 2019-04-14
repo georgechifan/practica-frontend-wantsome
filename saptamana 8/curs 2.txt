@@ -1,0 +1,156 @@
+//Implementati toate exercitiile folosind sintaxa ES6
+//Toate denumirile de variabile si functii trebuie sa fie in EN
+//Folositi nume sugestive si aveti grija la indentare
+
+/*
+1. Implementati o functie care accepta ca parametru o valoare numerica si returneaza suma numerelor de la 1 pana la valoarea specificata
+*/
+
+// const returnSumNumber = (nr) => {
+//   let sum=0;
+// }
+
+// const sumOfTen = () => sum (10);
+
+// var SumOfTen = function (){
+// var array = [1, 2, 3];
+
+// for (var i = 0, sum = 0; i < array.length; sum += array[i++]);
+// }
+// console.log(SumOfTen(3));
+
+
+// const userData={
+//   name:"lucian".
+//   func:function(){
+//     console.log(this.name);
+//   }
+// }
+// userData["func"]();
+
+
+
+/*
+2. Implementati o functie care accepta ca parametru un string si returneaza cel mai lung cuvant din acel string.
+*/
+
+
+// function findTheLongWord(str) {
+//   let text = str.split(" ");
+//   let longestWord = text.reduce((a, b) => {
+//     if(b.length > a.length) {
+//       return b;
+//     } else {
+//       return a;
+//     }
+//   });
+//   return longestWord;
+// }
+// console.log(findTheLongWord("ana are mere"));
+
+//sau
+
+// function checkLongestWord(string)=>{
+//   const words=string.split(" ");
+//   const (sortedWords=words.sort(a,b)=>a.length-b.length);
+//   return sortedWords[0];
+// }
+// console.log(checkLongestWord("ana"));
+
+
+
+
+/*
+3. Implementati o functie care accepta ca parametru un string si ii face 'reverse'
+*/
+
+// function reverse(string) {
+//     return string.split("").reverse().join("");
+// }
+// console.log(reverse("iiiiWWWWW"));
+
+
+// var reverseString=(str)=>str.split("").reverse().join("");
+
+// console.log(reverseString("ge"));
+// reverseString();
+
+//sau
+
+
+/*
+4. Implementati o functie care accepta ca parametru un string si inlocuieste fiecare litera din acesta cu urmatoarea litera din alfabet
+*/
+
+
+function changeEveryFirstLetter(str) {
+    for (var i = 0; i < str.length; i++) {
+        if (96 < str.charCodeAt(i) && str.charCodeAt(i) < 123) {
+            str = str.replace(str.charAt(i), String.fromCharCode(str.charCodeAt(i) + 1));
+        }
+    }
+    return str;
+}
+console.log(changeEveryFirstLetter("ab"));
+
+
+
+// function check(...args) {
+//   for(i=0; i<args.length;i++)
+//   return args;
+// }
+// console.log(check("andda".length));
+
+
+
+
+//charCodeAt
+
+/*
+5. Implementati o functie convertToTime care accepta ca parametru o valoare numerica si o converteste la numarul de ore si minute corespunzatoare.
+Exemplu: input: 64  ->  output: 1:4
+*/
+
+
+// function convertToTime(data) {
+// var minutes = data % 60;
+// var hours = (data – minutes) / 60;
+// return hours + “:” + minutes;
+// }
+// console.log(convertToTime(64));
+
+
+
+
+
+// function convertToTime(num)
+//  { 
+//   var hours = Math.floor(num / 60);  
+//   var minutes = num % 60;
+//   return hours + ":" + minutes;         
+// }
+
+// console.log(convertToTime(64));
+
+
+/*
+6. Implementati o functie care accepta ca parametru un string si returneaza string-ul cu toate literele ordonate alfabetic
+*/
+
+
+// var sortedWords = ['f', 'g', 'c', 'a', 'b''...args'];
+// var sortedArray = sortedWords.sort(function (a, b) {
+//       if (a < b) return -1;
+//       else if (a > b) 
+//         return 1;
+//       return 0;
+//     });
+// console.log(sortedArray)
+
+/*
+7. Implementati o functie care accepta ca parametru un string si verifica daca inainte si dupa fiecare litera din cadrul sau se afla caracterul '+'
+Exemplu: input: "+a+b+c+"   ->   output: true
+Exemply: input: "+ab+c+d+"  ->   output: false
+*/
+
+
