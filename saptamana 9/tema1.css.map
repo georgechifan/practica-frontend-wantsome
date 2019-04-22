@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACGA,AAAA,KAAK,CAAC;EACF,UAAU,EAAE,MAAkB;CACjC",
+    "sources": [
+        "tema1.scss",
+        "_forms.scss"
+    ],
+    "names": [],
+    "file": "tema1.css"
+}
