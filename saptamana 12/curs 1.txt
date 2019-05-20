@@ -1,0 +1,211 @@
+//1. creati o clasa Account care sa aiba location si name la constructor
+//2. creati o clasa Transaction care sa aiba sender, bank, amount si reference la constructor
+//2.1 - clasa Transaction sa aiba un getter finalSum() care sa scada din amount 10;
+//3. creati o clasa Table care sa aiba in cunstructor un array gol transactions
+//3.1 Clasa Table sa aiba o metoda addTransaction unde sa putem adauga tranzactiile pe care o sa le creem mai tarziu
+
+
+class Account {
+  constructor(location, name) {
+    this.location = location;
+    this.name = name;
+  }
+}
+tema acasa_
+
+
+class Transaction {
+  constructor(sender, bank, amount, reference){
+    this.sender = sender;
+    this.bank = bank;
+    this.amount = amount;
+    this.reference = reference;
+  }
+  finalSum() {
+    return this.amount - 10;
+  }
+}
+
+class Table {
+  constructor(){
+    this.transactions = [];
+  }
+  
+  addTransaction(...transaction){
+    this.transactions.push(...transaction)
+  }
+}
+
+
+
+
+const bankAccount = new Account('iasi', 'Ovidiu')
+const transaction1 = new Transaction('Lucian', 'Revolut', 100, 'beer money' );
+const transaction2 = new Transaction('Victor', 'ING', 1000, 'gagici' );
+const table = new Table();
+table.addTransaction(transaction1, transaction2);
+console.log(table)
+
+______________________________________________
+in clasa exercitii:
+
+
+// //1. creati o clasa Account care sa aiba location si name la constructor
+// //2. creati o clasa Transaction care sa aiba sender, bank, amount si reference la constructor
+// //2.1 - clasa Transaction sa aiba un getter finalSum() care sa scada din amount 10;
+// //3. creati o clasa Table care sa aiba in cunstructor un array gol transactions
+// //3.1 Clasa Table sa aiba o metoda addTransaction unde sa putem adauga tranzactiile pe care o sa le creem mai tarziu
+
+
+// class Account {
+//   constructor(location, name) {
+//     this.location = location;
+//     this.name = name;
+//   }
+// }
+
+// class Transaction {
+//   constructor(sender, bank, amount, reference){
+//     this.sender = sender;
+//     this.bank = bank;
+//     this.amount = amount;
+//     this.reference = reference;
+//   }
+//   finalSum() {
+//     return this.amount - 10;
+//   }
+// }
+
+// class Table {
+//   constructor(){
+//     this.transactions = [];
+//   }
+  
+//   addTransaction(...transaction){
+//     this.transactions.push(...transaction)
+//   }
+// }
+
+
+
+
+// const bankAccount = new Account('iasi', 'Ovidiu')
+// const transaction1 = new Transaction('Lucian', 'Revolut', 100, 'beer money' );
+// const transaction2 = new Transaction('Victor', 'ING', 1000, 'gagici' );
+// const table = new Table();
+// table.addTransaction(transaction1, transaction2);
+// console.log(table)
+
+//tema in clasa curs 1 sapt 12:
+
+// function capitalizeNames(arr){
+//   const trySomething = arr.map((name) => {
+//     const lowerName = name.toLowerCase();
+//     return lowerName.charAt(0).toUpperCase()+lowerName.slice(1, lowerName.length);
+//   })
+//   return trySomething;
+// }
+// console.log(capitalizeNames['jacob']);
+
+
+//SAUUU
+
+// function capitalizeNames(arr){
+//   const Capitalize = function (string){
+//   const loweredString = string.toLowerCase();
+//     return loweredString.charAt().toUpperCase() + loweredString.slice(1, loweredString.length
+// ; }
+//   function capitalizeName(arr){
+//     let x = arr.map (Capitalize);
+//     return x;
+//   }
+// }
+// console.log(capitalizeName());
+
+
+
+//exx 2:
+// const double = item => {
+//   if (typeof item === 'number') {
+//     return item * 2;
+//   }
+//   return item;
+// };
+// const doubleEachNumber = (arr) => {
+//   const doubledNumbersArray = arr.map(double);
+//   return doubledNumbersArray
+// };
+// console.log(doubleEachNumber([1, "Jaja",100, "Ovidiu"]));
+
+//ex3
+// function getPersonsNames(arr){
+//   const otherConst = arr.map((person) =>{
+//     return person.name;
+//     })
+//   console.log(otherConst)
+// }
+// getPersonsNames(
+//   [{
+//   name: 'Angelina',
+//   surname: 'Jolie',
+//   age: 80
+// },{
+//      name: 'Eric',
+//      surname: 'Jones',
+//        age: 27
+//    }] )
+
+//ex4
+// function computeExamPass(arr) {
+  
+// }
+// console.log(computeExamPass([
+//   {
+//     name: 'Angelina',
+//     surname: 'Jolie',
+//     grade: 7
+// },
+// {
+//   name: 'Eric',
+//   surname: 'Jones',
+//   grade: 3
+// },
+// ]))
+
+//eeeeeee
+
+// const arr = [
+//   {
+//     name: 'Ovidiu',
+//     surname: 'Grig',
+//   },
+//   {
+//     name: 'ssss',
+//     surname: 'sfgggg'
+//   },
+// ];
+
+// const returnFullName = item => item.name + item.surname;
+// const getPersonsName = (arr) => {
+//   const personsName = arr.map(returnFullName); //in mapare se declara o functie, mai sus, returnFullName
+//   return getPersonsName;
+// };
+// console.log(getPersonsName(arr));
+
+//ex 5:
+
+function getPersonsDomElements(arr){
+ return arr.map(item => `<h1>${item.name}</h1> <h2>${item.surname}</h2>`)
+}
+console.log(getPersonsDomElements([
+ {
+ name: 'Angelina',
+ surname: 'Jolie',
+ age: 80
+ },
+ {
+ name: 'Eric',
+ surname: 'Jones',
+ age: 27
+ },
+])); 
