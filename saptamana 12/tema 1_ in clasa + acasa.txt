@@ -89,6 +89,7 @@ in clasa exercitii:
 
 
 
+
 // const bankAccount = new Account('iasi', 'Ovidiu')
 // const transaction1 = new Transaction('Lucian', 'Revolut', 100, 'beer money' );
 // const transaction2 = new Transaction('Victor', 'ING', 1000, 'gagici' );

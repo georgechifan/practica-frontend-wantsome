@@ -1,0 +1,41 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="tema.css">
+    <title>tema</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+      <header>
+
+      </header>
+
+      <section>
+
+      </section>
+
+      <script type="text/javascript" src="tema.js"></script>
+  </body>
+</html> -->
+<html>
+  <body>
+    <script>
+      <input class="jscolor" value="ab2567"></input>
+      var html = "";
+      Object.keys(colors).forEach(function(col) {
+        html += "<h2>" + col + "</h2>";
+
+        Object.keys(colors[col]).forEach(function(shade) { 
+          html += "<div style='background:" + colors[col][shade] + ";height:40px'>";
+        });
+      });
+      document.write(html);
+    </script>
+  </body>
+</html>
+
